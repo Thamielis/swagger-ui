@@ -58,7 +58,7 @@ window.SwaggerUi = Backbone.Router.extend({
     // Set the callbacks
     var that = this;
     this.options.success = function() { return that.render(); };
-    this.options.progress = function(d) { return that.showMessage(d); };
+    this.options.progress = function() { return that.showMessage('Loading ...'); };
     this.options.failure = function(d) { return that.onLoadFailure(d); };
 
     // Create view to handle the header inputs
@@ -283,24 +283,3 @@ window.SwaggerUi.utils = {};
     }
   }
 })();
-
-
-// UMD
-(function (root, factory) {
-    if (typeof define === 'function' && define.amd) {
-        // AMD. Register as an anonymous module.
-        define(['b'], function (b) {
-            return (root.SwaggerUi = factory(b));
-        });
-    } else if (typeof exports === 'object') {
-        // Node. Does not work with strict CommonJS, but
-        // only CommonJS-like environments that support module.exports,
-        // like Node.
-        module.exports = factory(require('b'));
-    } else {
-        // Browser globals
-        root.SwaggerUi = factory(root.b);
-    }
-}(this, function () {
-    return SwaggerUi;
-}));

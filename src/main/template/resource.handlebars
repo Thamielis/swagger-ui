@@ -4,21 +4,21 @@
   </h2>
   <ul class='options'>
     <li>
-      <a href='#!/{{{sanitize id}}}' id='endpointListTogger_{{{sanitize id}}}' class="toggleEndpointList" data-id="{{{sanitize id}}}" data-sw-translate>Show/Hide</a>
+      <a href='#!/{{{sanitize id}}}' id='endpointListTogger_{{{sanitize id}}}' class="toggleEndpointList btn btn-primary" data-id="{{{sanitize id}}}" data-sw-translate>Show/Hide</a>
     </li>
     <li>
-      <a href='#' class="collapseResource" data-id="{{{sanitize id}}}" data-sw-translate>
+      <a href='#' class="collapseResource btn btn-primary" data-id="{{{sanitize id}}}" data-sw-translate>
         List Operations
       </a>
     </li>
     <li>
-      <a href='#' class="expandResource" data-id="{{{sanitize id}}}" data-sw-translate>
+      <a href='#' class="expandResource btn btn-primary" data-id="{{{sanitize id}}}" data-sw-translate>
         Expand Operations
       </a>
     </li>
     {{#if url}}
     <li>
-      <a href='{{{sanitize url}}}' data-sw-translate>Raw</a>
+      <a href='{{{sanitize url}}}' class="btn btn-primary" data-sw-translate>Raw</a>
     </li>
     {{/if}}
   </ul>

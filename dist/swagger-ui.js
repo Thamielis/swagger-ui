@@ -121,78 +121,12 @@ templates['content_type'] = template({"1":function(container,depth0,helpers,part
     + "</select>\n";
 },"useData":true});
 templates['main'] = template({"1":function(container,depth0,helpers,partials,data) {
-    var stack1, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing;
-
-  return "  <div class=\"info_title\">"
-    + ((stack1 = (helpers.sanitize || (depth0 && depth0.sanitize) || alias2).call(alias1,((stack1 = (depth0 != null ? depth0.info : depth0)) != null ? stack1.title : stack1),{"name":"sanitize","hash":{},"data":data})) != null ? stack1 : "")
-    + "</div>\n  <div class=\"info_description markdown\">"
-    + ((stack1 = (helpers.sanitize || (depth0 && depth0.sanitize) || alias2).call(alias1,((stack1 = (depth0 != null ? depth0.info : depth0)) != null ? stack1.description : stack1),{"name":"sanitize","hash":{},"data":data})) != null ? stack1 : "")
-    + "</div>\n"
-    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.externalDocs : depth0),{"name":"if","hash":{},"fn":container.program(2, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "  "
-    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.info : depth0)) != null ? stack1.termsOfServiceUrl : stack1),{"name":"if","hash":{},"fn":container.program(4, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "\n  "
-    + ((stack1 = helpers["if"].call(alias1,((stack1 = ((stack1 = (depth0 != null ? depth0.info : depth0)) != null ? stack1.contact : stack1)) != null ? stack1.name : stack1),{"name":"if","hash":{},"fn":container.program(6, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "\n  "
-    + ((stack1 = helpers["if"].call(alias1,((stack1 = ((stack1 = (depth0 != null ? depth0.info : depth0)) != null ? stack1.contact : stack1)) != null ? stack1.url : stack1),{"name":"if","hash":{},"fn":container.program(8, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "\n  "
-    + ((stack1 = helpers["if"].call(alias1,((stack1 = ((stack1 = (depth0 != null ? depth0.info : depth0)) != null ? stack1.contact : stack1)) != null ? stack1.email : stack1),{"name":"if","hash":{},"fn":container.program(10, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "\n  "
-    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.info : depth0)) != null ? stack1.license : stack1),{"name":"if","hash":{},"fn":container.program(12, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "\n";
-},"2":function(container,depth0,helpers,partials,data) {
-    var stack1, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing;
-
-  return "  <p>"
-    + ((stack1 = (helpers.sanitize || (depth0 && depth0.sanitize) || alias2).call(alias1,((stack1 = (depth0 != null ? depth0.externalDocs : depth0)) != null ? stack1.description : stack1),{"name":"sanitize","hash":{},"data":data})) != null ? stack1 : "")
-    + "</p>\n  <a href=\""
-    + ((stack1 = (helpers.escape || (depth0 && depth0.escape) || alias2).call(alias1,((stack1 = (depth0 != null ? depth0.externalDocs : depth0)) != null ? stack1.url : stack1),{"name":"escape","hash":{},"data":data})) != null ? stack1 : "")
-    + "\" target=\"_blank\">"
-    + ((stack1 = (helpers.escape || (depth0 && depth0.escape) || alias2).call(alias1,((stack1 = (depth0 != null ? depth0.externalDocs : depth0)) != null ? stack1.url : stack1),{"name":"escape","hash":{},"data":data})) != null ? stack1 : "")
-    + "</a>\n";
-},"4":function(container,depth0,helpers,partials,data) {
-    var stack1;
-
-  return "<div class=\"info_tos\"><a target=\"_blank\" href=\""
-    + ((stack1 = (helpers.escape || (depth0 && depth0.escape) || helpers.helperMissing).call(depth0 != null ? depth0 : {},((stack1 = (depth0 != null ? depth0.info : depth0)) != null ? stack1.termsOfServiceUrl : stack1),{"name":"escape","hash":{},"data":data})) != null ? stack1 : "")
-    + "\" data-sw-translate>Terms of service</a></div>";
-},"6":function(container,depth0,helpers,partials,data) {
-    var stack1;
-
-  return "<div><div class='info_name' style=\"display: inline\" data-sw-translate>Created by </div> "
-    + ((stack1 = (helpers.escape || (depth0 && depth0.escape) || helpers.helperMissing).call(depth0 != null ? depth0 : {},((stack1 = ((stack1 = (depth0 != null ? depth0.info : depth0)) != null ? stack1.contact : stack1)) != null ? stack1.name : stack1),{"name":"escape","hash":{},"data":data})) != null ? stack1 : "")
-    + "</div>";
-},"8":function(container,depth0,helpers,partials,data) {
-    var stack1, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing;
-
-  return "<div class='info_url' data-sw-translate>See more at <a href=\""
-    + ((stack1 = (helpers.escape || (depth0 && depth0.escape) || alias2).call(alias1,((stack1 = ((stack1 = (depth0 != null ? depth0.info : depth0)) != null ? stack1.contact : stack1)) != null ? stack1.url : stack1),{"name":"escape","hash":{},"data":data})) != null ? stack1 : "")
-    + "\">"
-    + ((stack1 = (helpers.escape || (depth0 && depth0.escape) || alias2).call(alias1,((stack1 = ((stack1 = (depth0 != null ? depth0.info : depth0)) != null ? stack1.contact : stack1)) != null ? stack1.url : stack1),{"name":"escape","hash":{},"data":data})) != null ? stack1 : "")
-    + "</a></div>";
-},"10":function(container,depth0,helpers,partials,data) {
-    var stack1, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing;
-
-  return "<div class='info_email'><a target=\"_parent\" href=\"mailto:"
-    + ((stack1 = (helpers.escape || (depth0 && depth0.escape) || alias2).call(alias1,((stack1 = ((stack1 = (depth0 != null ? depth0.info : depth0)) != null ? stack1.contact : stack1)) != null ? stack1.email : stack1),{"name":"escape","hash":{},"data":data})) != null ? stack1 : "")
-    + "?subject="
-    + ((stack1 = (helpers.escape || (depth0 && depth0.escape) || alias2).call(alias1,((stack1 = (depth0 != null ? depth0.info : depth0)) != null ? stack1.title : stack1),{"name":"escape","hash":{},"data":data})) != null ? stack1 : "")
-    + "\" data-sw-translate>Contact the developer</a></div>";
-},"12":function(container,depth0,helpers,partials,data) {
-    var stack1, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing;
-
-  return "<div class='info_license'><a target=\"_blank\" href='"
-    + ((stack1 = (helpers.escape || (depth0 && depth0.escape) || alias2).call(alias1,((stack1 = ((stack1 = (depth0 != null ? depth0.info : depth0)) != null ? stack1.license : stack1)) != null ? stack1.url : stack1),{"name":"escape","hash":{},"data":data})) != null ? stack1 : "")
-    + "'>"
-    + ((stack1 = (helpers.escape || (depth0 && depth0.escape) || alias2).call(alias1,((stack1 = ((stack1 = (depth0 != null ? depth0.info : depth0)) != null ? stack1.license : stack1)) != null ? stack1.name : stack1),{"name":"escape","hash":{},"data":data})) != null ? stack1 : "")
-    + "</a></div>";
-},"14":function(container,depth0,helpers,partials,data) {
     var stack1;
 
   return "  , <span style=\"font-variant: small-caps\" data-sw-translate>api version</span>: "
     + ((stack1 = (helpers.escape || (depth0 && depth0.escape) || helpers.helperMissing).call(depth0 != null ? depth0 : {},((stack1 = (depth0 != null ? depth0.info : depth0)) != null ? stack1.version : stack1),{"name":"escape","hash":{},"data":data})) != null ? stack1 : "")
     + "\n    ";
-},"16":function(container,depth0,helpers,partials,data) {
+},"3":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing;
 
   return "    <span style=\"float:right\"><a target=\"_blank\" href=\""
@@ -207,14 +141,12 @@ templates['main'] = template({"1":function(container,depth0,helpers,partials,dat
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=depth0 != null ? depth0 : {};
 
-  return "<div class='info' id='api_info'>\n"
-    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.info : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "</div>\n<div class='container' id='resources_container'>\n  <div class='authorize-wrapper'></div>\n\n  <ul id='resources'></ul>\n\n  <div class=\"footer\">\n    <h4 style=\"color: #999\">[ <span style=\"font-variant: small-caps\">base url</span>: "
+  return "<div class='container' id='resources_container'>\n\n  <ul id='resources'></ul>\n\n  <div class=\"footer\">\n    <h4 style=\"color: #999\">[ <span style=\"font-variant: small-caps\">base url</span>: "
     + ((stack1 = (helpers.escape || (depth0 && depth0.escape) || helpers.helperMissing).call(alias1,(depth0 != null ? depth0.basePath : depth0),{"name":"escape","hash":{},"data":data})) != null ? stack1 : "")
     + "\n"
-    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.info : depth0)) != null ? stack1.version : stack1),{"name":"if","hash":{},"fn":container.program(14, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.info : depth0)) != null ? stack1.version : stack1),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "]\n"
-    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.validatorUrl : depth0),{"name":"if","hash":{},"fn":container.program(16, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.validatorUrl : depth0),{"name":"if","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "    </h4>\n    </div>\n</div>\n";
 },"useData":true});
 templates['oauth2'] = template({"1":function(container,depth0,helpers,partials,data) {
@@ -303,7 +235,7 @@ templates['operation'] = template({"1":function(container,depth0,helpers,partial
 },"19":function(container,depth0,helpers,partials,data) {
     return "";
 },"21":function(container,depth0,helpers,partials,data) {
-    return "          <div class='sandbox_header'>\n            <input class='submit' type='submit' value='Try it out!' data-sw-translate/>\n            <a href='#' class='response_hider' style='display:none' data-sw-translate>Hide Response</a>\n            <span class='response_throbber' style='display:none'></span>\n          </div>\n";
+    return "          <div class='sandbox_header'>\n            <input class='btn btn-primary' type='submit' value='Try it out!' data-sw-translate/>\n            <a href='#' class='response_hider' style='display:none' data-sw-translate>Hide Response</a>\n            <span class='response_throbber' style='display:none'></span>\n          </div>\n";
 },"23":function(container,depth0,helpers,partials,data) {
     return "          <h4 data-sw-translate>Request Headers</h4>\n          <div class='block request_headers'></div>\n";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
@@ -638,7 +570,7 @@ templates['parameter_content_type'] = template({"1":function(container,depth0,he
     + container.escapeExpression(((helper = (helper = helpers.parameterContentTypeId || (depth0 != null ? depth0.parameterContentTypeId : depth0)) != null ? helper : alias2),(typeof helper === "function" ? helper.call(alias1,{"name":"parameterContentTypeId","hash":{},"data":data}) : helper)))
     + "\" data-sw-translate>Parameter content type:</label>\n<select name=\"parameterContentType\" id=\""
     + ((stack1 = (helpers.sanitize || (depth0 && depth0.sanitize) || alias2).call(alias1,(depth0 != null ? depth0.parameterContentTypeId : depth0),{"name":"sanitize","hash":{},"data":data})) != null ? stack1 : "")
-    + "\">\n"
+    + "\" class=\"form-control\">\n"
     + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.consumes : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.program(4, data, 0),"data":data})) != null ? stack1 : "")
     + "</select>\n";
 },"useData":true});
@@ -656,7 +588,7 @@ templates['resource'] = template({"1":function(container,depth0,helpers,partials
 
   return "    <li>\n      <a href='"
     + ((stack1 = (helpers.sanitize || (depth0 && depth0.sanitize) || helpers.helperMissing).call(depth0 != null ? depth0 : {},(depth0 != null ? depth0.url : depth0),{"name":"sanitize","hash":{},"data":data})) != null ? stack1 : "")
-    + "' data-sw-translate>Raw</a>\n    </li>\n";
+    + "' class=\"btn btn-primary\" data-sw-translate>Raw</a>\n    </li>\n";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1, helper, options, alias1=depth0 != null ? depth0 : {}, alias2=helpers.helperMissing, buffer = 
   "<div class='heading'>\n  <h2>\n    <a href='#!/"
@@ -674,11 +606,11 @@ templates['resource'] = template({"1":function(container,depth0,helpers,partials
     + ((stack1 = (helpers.sanitize || (depth0 && depth0.sanitize) || alias2).call(alias1,(depth0 != null ? depth0.id : depth0),{"name":"sanitize","hash":{},"data":data})) != null ? stack1 : "")
     + "' id='endpointListTogger_"
     + ((stack1 = (helpers.sanitize || (depth0 && depth0.sanitize) || alias2).call(alias1,(depth0 != null ? depth0.id : depth0),{"name":"sanitize","hash":{},"data":data})) != null ? stack1 : "")
-    + "' class=\"toggleEndpointList\" data-id=\""
+    + "' class=\"toggleEndpointList btn btn-primary\" data-id=\""
     + ((stack1 = (helpers.sanitize || (depth0 && depth0.sanitize) || alias2).call(alias1,(depth0 != null ? depth0.id : depth0),{"name":"sanitize","hash":{},"data":data})) != null ? stack1 : "")
-    + "\" data-sw-translate>Show/Hide</a>\n    </li>\n    <li>\n      <a href='#' class=\"collapseResource\" data-id=\""
+    + "\" data-sw-translate>Show/Hide</a>\n    </li>\n    <li>\n      <a href='#' class=\"collapseResource btn btn-primary\" data-id=\""
     + ((stack1 = (helpers.sanitize || (depth0 && depth0.sanitize) || alias2).call(alias1,(depth0 != null ? depth0.id : depth0),{"name":"sanitize","hash":{},"data":data})) != null ? stack1 : "")
-    + "\" data-sw-translate>\n        List Operations\n      </a>\n    </li>\n    <li>\n      <a href='#' class=\"expandResource\" data-id=\""
+    + "\" data-sw-translate>\n        List Operations\n      </a>\n    </li>\n    <li>\n      <a href='#' class=\"expandResource btn btn-primary\" data-id=\""
     + ((stack1 = (helpers.sanitize || (depth0 && depth0.sanitize) || alias2).call(alias1,(depth0 != null ? depth0.id : depth0),{"name":"sanitize","hash":{},"data":data})) != null ? stack1 : "")
     + "\" data-sw-translate>\n        Expand Operations\n      </a>\n    </li>\n"
     + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.url : depth0),{"name":"if","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
@@ -21685,7 +21617,7 @@ window.SwaggerUi = Backbone.Router.extend({
     // Set the callbacks
     var that = this;
     this.options.success = function() { return that.render(); };
-    this.options.progress = function(d) { return that.showMessage(d); };
+    this.options.progress = function() { return that.showMessage('Loading ...'); };
     this.options.failure = function(d) { return that.onLoadFailure(d); };
 
     // Create view to handle the header inputs
@@ -21910,27 +21842,6 @@ window.SwaggerUi.utils = {};
     }
   }
 })();
-
-
-// UMD
-(function (root, factory) {
-    if (typeof define === 'function' && define.amd) {
-        // AMD. Register as an anonymous module.
-        define(['b'], function (b) {
-            return (root.SwaggerUi = factory(b));
-        });
-    } else if (typeof exports === 'object') {
-        // Node. Does not work with strict CommonJS, but
-        // only CommonJS-like environments that support module.exports,
-        // like Node.
-        module.exports = factory(require('b'));
-    } else {
-        // Browser globals
-        root.SwaggerUi = factory(root.b);
-    }
-}(this, function () {
-    return SwaggerUi;
-}));
 
 'use strict';
 
@@ -23999,351 +23910,12 @@ SwaggerUi.partials.signature = (function () {
 
   // copy-pasted from swagger-js
   var getModelSignature = function (name, schema, models, modelPropertyMacro) {
-    var strongOpen = '<span class="strong">';
-    var strongClose = '</span>';
-
-    var optionHtml = function (label, value) {
-      return '<tr><td class="optionName">' + label + ':</td><td>' + value + '</td></tr>';
-    };
-
-
-    // Allow for ignoring the 'name' argument.... shifting the rest
-    if(_.isObject(arguments[0])) {
-      name = void 0;
-      schema = arguments[0];
-      models = arguments[1];
-      modelPropertyMacro = arguments[2];
-    }
-
-    models = models || {};
-
-    // Resolve the schema (Handle nested schemas)
-    schema = resolveSchema(schema);
-
-    // Return for empty object
-    if(_.isEmpty(schema)) {
-      return strongOpen + 'Empty' + strongClose;
-    }
-
-    // Dereference $ref from 'models'
-    if(typeof schema.$ref === 'string') {
-      name = simpleRef(schema.$ref);
-      schema = models[name];
-      if(typeof schema === 'undefined')
-      {
-        return strongOpen + name + ' is not defined!' + strongClose;
-      }
-    }
-
-    if(typeof name !== 'string') {
-      name = schema.title || 'Inline Model';
-    }
-
-    // If we are a Model object... adjust accordingly
-    if(schema.definition) {
-      schema = schema.definition;
-    }
-
-    if(typeof modelPropertyMacro !== 'function') {
-      modelPropertyMacro = function(prop){
-        return (prop || {}).default;
-      };
-    }
-
-    var references = {};
-    var seenModels = [];
-    var inlineModels = 0;
-
-    // Generate current HTML
-    var html = processModel(schema, name);
-
-    // Generate references HTML
-    while (_.keys(references).length > 0) {
-      /* jshint ignore:start */
-      _.forEach(references, function (schema, name) {
-        var seenModel = _.indexOf(seenModels, name) > -1;
-
-        delete references[name];
-
-        if (!seenModel) {
-          seenModels.push(name);
-
-          html += '<br />' + processModel(schema, name);
-        }
-      });
-      /* jshint ignore:end */
-    }
-
+    /*
+    IaaS : this is th function where we return the link to the json viewer
+     */
+    console.log(name, schema, models, modelPropertyMacro);
+    const html ='<a href="/jsonviewer/">Go to model</a>';
     return html;
-
-
-    function addReference(schema, name, skipRef) {
-      var modelName = name;
-      var model;
-
-      if (schema.$ref) {
-        modelName = schema.title || simpleRef(schema.$ref);
-        model = models[simpleRef(schema.$ref)];
-      } else if (_.isUndefined(name)) {
-        modelName = schema.title || 'Inline Model ' + (++inlineModels);
-        model = {definition: schema};
-      }
-
-      if (skipRef !== true) {
-        references[modelName] = _.isUndefined(model) ? {} : model.definition;
-      }
-
-      return modelName;
-    }
-
-    function primitiveToHTML(schema) {
-      var html = '<span class="propType">';
-      var type = schema.type || 'object';
-
-      if (schema.$ref) {
-        html += addReference(schema, simpleRef(schema.$ref));
-      } else if (type === 'object') {
-        if (!_.isUndefined(schema.properties)) {
-          html += addReference(schema);
-        } else {
-          html += 'object';
-        }
-      } else if (type === 'array') {
-        html += 'Array[';
-
-        if (_.isArray(schema.items)) {
-          html += _.map(schema.items, addReference).join(',');
-        } else if (_.isPlainObject(schema.items)) {
-          if (_.isUndefined(schema.items.$ref)) {
-            if (!_.isUndefined(schema.items.type) && _.indexOf(['array', 'object'], schema.items.type) === -1) {
-              html += schema.items.type;
-            } else {
-              html += addReference(schema.items);
-            }
-          } else {
-            html += addReference(schema.items, simpleRef(schema.items.$ref));
-          }
-        } else {
-          console.log('Array type\'s \'items\' schema is not an array or an object, cannot process');
-          html += 'object';
-        }
-
-        html += ']';
-      } else {
-        html += schema.type;
-      }
-
-      html += '</span>';
-
-      return html;
-    }
-
-    function primitiveToOptionsHTML(schema, html) {
-      var options = '';
-      var type = schema.type || 'object';
-      var isArray = type === 'array';
-
-      if (!_.isUndefined(schema.description)) {
-        html += ': ' + '<span class="propDesc">' + schema.description + '</span>';
-      }
-
-      if (schema.enum) {
-        html += ' = <span class="propVals">[\'' + schema.enum.join('\', \'') + '\']</span>';
-      }
-
-      if (isArray) {
-        if (_.isPlainObject(schema.items) && !_.isUndefined(schema.items.type)) {
-          type = schema.items.type;
-        } else {
-          type = 'object';
-        }
-      }
-
-      if (!_.isUndefined(schema.default)) {
-        options += optionHtml('Default', schema.default);
-      }
-
-      switch (type) {
-      case 'string':
-        if (schema.minLength) {
-          options += optionHtml('Min. Length', schema.minLength);
-        }
-
-        if (schema.maxLength) {
-          options += optionHtml('Max. Length', schema.maxLength);
-        }
-
-        if (schema.pattern) {
-          options += optionHtml('Reg. Exp.', schema.pattern);
-        }
-        break;
-      case 'integer':
-      case 'number':
-        if (schema.minimum) {
-          options += optionHtml('Min. Value', schema.minimum);
-        }
-
-        if (schema.exclusiveMinimum) {
-          options += optionHtml('Exclusive Min.', 'true');
-        }
-
-        if (schema.maximum) {
-          options += optionHtml('Max. Value', schema.maximum);
-        }
-
-        if (schema.exclusiveMaximum) {
-          options += optionHtml('Exclusive Max.', 'true');
-        }
-
-        if (schema.multipleOf) {
-          options += optionHtml('Multiple Of', schema.multipleOf);
-        }
-
-        break;
-      }
-
-      if (isArray) {
-        if (schema.minItems) {
-          options += optionHtml('Min. Items', schema.minItems);
-        }
-
-        if (schema.maxItems) {
-          options += optionHtml('Max. Items', schema.maxItems);
-        }
-
-        if (schema.uniqueItems) {
-          options += optionHtml('Unique Items', 'true');
-        }
-
-        if (schema.collectionFormat) {
-          options += optionHtml('Coll. Format', schema.collectionFormat);
-        }
-      }
-
-      if (_.isUndefined(schema.items)) {
-        if (_.isArray(schema.enum)) {
-          var enumString;
-
-          if (type === 'number' || type === 'integer') {
-            enumString = schema.enum.join(', ');
-          } else {
-            enumString = '"' + schema.enum.join('", "') + '"';
-          }
-
-          options += optionHtml('Enum', enumString);
-        }
-      }
-
-      if (options.length > 0) {
-        html = '<span class="propWrap">' + html + '<table class="optionsWrapper"><tr><th colspan="2">' + type + '</th></tr>' + options + '</table></span>';
-      }
-
-      return html;
-    }
-
-    function processModel(schema, name) {
-      var type = schema.type || 'object';
-      var isArray = schema.type === 'array';
-      var html = strongOpen + name + ' ' + (isArray ? '[' : '{') + strongClose;
-      var contents;
-
-      if (name) {
-        seenModels.push(name);
-      }
-
-      if (isArray) {
-        if (_.isArray(schema.items)) {
-          html += '<div>' + _.map(schema.items, function (item) {
-            var type = item.type || 'object';
-
-            if (_.isUndefined(item.$ref)) {
-              if (_.indexOf(['array', 'object'], type) > -1) {
-                if (type === 'object' && _.isUndefined(item.properties)) {
-                  return 'object';
-                } else {
-                  return addReference(item);
-                }
-              } else {
-                return primitiveToOptionsHTML(item, type);
-              }
-            } else {
-              return addReference(item, simpleRef(item.$ref));
-            }
-          }).join(',</div><div>');
-        } else if (_.isPlainObject(schema.items)) {
-          if (_.isUndefined(schema.items.$ref)) {
-            if (_.indexOf(['array', 'object'], schema.items.type || 'object') > -1) {
-              if ((_.isUndefined(schema.items.type) || schema.items.type === 'object') && _.isUndefined(schema.items.properties)) {
-                html += '<div>object</div>';
-              } else {
-                html += '<div>' + addReference(schema.items) + '</div>';
-              }
-            } else {
-              html += '<div>' + primitiveToOptionsHTML(schema.items, schema.items.type) + '</div>';
-            }
-          } else {
-            html += '<div>' + addReference(schema.items, simpleRef(schema.items.$ref)) + '</div>';
-          }
-        } else {
-          console.log('Array type\'s \'items\' property is not an array or an object, cannot process');
-          html += '<div>object</div>';
-        }
-      } else {
-        if (schema.$ref) {
-          html += '<div>' + addReference(schema, name) + '</div>';
-        } else if (type === 'object') {
-          if (_.isPlainObject(schema.properties)) {
-            contents = _.map(schema.properties, function (property, name) {
-              var propertyIsRequired = (_.indexOf(schema.required, name) >= 0);
-              var cProperty = _.cloneDeep(property);
-
-              var requiredClass = propertyIsRequired ? 'required' : '';
-              var html = '<span class="propName ' + requiredClass + '">' + name + '</span> (';
-              var model;
-
-              // Allow macro to set the default value
-              cProperty.default = modelPropertyMacro(cProperty);
-
-              // Resolve the schema (Handle nested schemas)
-              cProperty = resolveSchema(cProperty);
-
-              // We need to handle property references to primitives (Issue 339)
-              if (!_.isUndefined(cProperty.$ref)) {
-                model = models[simpleRef(cProperty.$ref)];
-
-                if (!_.isUndefined(model) && _.indexOf([undefined, 'array', 'object'], model.definition.type) === -1) {
-                  // Use referenced schema
-                  cProperty = resolveSchema(model.definition);
-                }
-              }
-
-              html += primitiveToHTML(cProperty);
-
-              if(!propertyIsRequired) {
-                html += ', <span class="propOptKey">optional</span>';
-              }
-
-              if(property.readOnly) {
-                  html += ', <span class="propReadOnly">read only</span>';
-              }
-
-              html += ')';
-
-              return '<div' + (property.readOnly ? ' class="readOnly"' : '') + '>' + primitiveToOptionsHTML(cProperty, html);
-            }).join(',</div>');
-          }
-
-          if (contents) {
-            html += contents + '</div>';
-          }
-        } else {
-          html += '<div>' + primitiveToOptionsHTML(schema, type) + '</div>';
-        }
-      }
-
-      return html + strongOpen + (isArray ? ']' : '}') + strongClose;
-    }
-
   };
 
   // copy-pasted from swagger-js
